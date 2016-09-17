@@ -1,0 +1,7 @@
+ipynb:
+  build: .
+  volumes:
+    - ".:/captcha"
+  command: bash -c "cd /captcha && /work/anaconda/bin/ipython notebook --ip 0.0.0.0"
+  ports:
+    - "18888:8888"
